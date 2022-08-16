@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.main-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: black;
+    color: white;
+}
+
+.pages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3em;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.splash {
+    background-image: url(./images/coffee_grounds.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.splash-child {
+    /* display: flex;
+    text-align: center;
+    flex-direction: column; */
+    height: 25%;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.splash-child p {
+    background: transparent;
+}
+
+a {
+    color: hotpink;
+}
+
+
+#welcome {
+    font-size: xx-large;
+}
+
+#welcome-sub,
+.sec-text {
+    font-size: x-large;
+}
+
+button.discover {
+    background-color: hotpink;
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: right;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+#map {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+}
+
+#loc-text {
+    margin-bottom: 10px;
+}
+
+.gallery,
+.brewing,
+.about,
+.location {
+    margin: 3%;
+}
+
+.new-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sec-text {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.gallery .inner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.brewing .inner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+
+}
+
+.inner-grid img {
+    width: 100%;
+}
+
+.brewing .inner-grid img,
+.brewing .inner-grid p {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.card {
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+}
+
+.brewing .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.brewing h4 {
+    display: flex;
+    justify-content: center;
+}
