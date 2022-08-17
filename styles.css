@@ -4,7 +4,7 @@
     margin: 0;
     background-color: black;
     color: white;
-    font-family: 'DynaPuff', cursive;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 html {
@@ -50,9 +50,6 @@ html {
 }
 
 .splash-child {
-    /* display: flex;
-    text-align: center;
-    flex-direction: column; */
     height: 25%;
     align-items: center;
     color: white;
@@ -125,11 +122,17 @@ button.discover {
 
 .gallery .inner-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px, auto);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+
 }
+
+.gallery .inner-grid .card:nth-child(1) {
+    grid-column: 1/-1;
+}
+
 
 .brewing .inner-grid {
     display: grid;
@@ -174,5 +177,27 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+
+
+/* for screen less than 750px */
+@media all and (max-width: 750px) {
+
+    .gallery .inner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brewing .inner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop {
+        display: none;
+    }
 
 }
